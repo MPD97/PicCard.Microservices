@@ -1,0 +1,154 @@
+version: '3'
+services:
+  archive-api:
+    build: 
+      context: ./../PicCard.Archive
+      dockerfile: ./src/PicCard.Archive.Api/Dockerfile
+    depends_on:
+      - redis
+    networks:
+      - hello-dapr
+      
+  archive-api-dapr:
+    image: "daprio/daprd:1.8.4"
+    depends_on:
+      - archive-api
+    network_mode: "service:archive-api"
+ 
+  comment-api:
+    build: 
+      context: ./../PicCard.Comment
+      dockerfile: ./src/PicCard.Comment.Api/Dockerfile
+    depends_on:
+      - redis
+    networks:
+      - hello-dapr
+      
+  comment-api-dapr:
+    image: "daprio/daprd:1.8.4"
+    depends_on:
+      - comment-api
+    network_mode: "service:comment-api"
+
+  event-api:
+    build: 
+      context: ./../PicCard.Event
+      dockerfile: ./src/PicCard.Event.Api/Dockerfile
+    depends_on:
+      - redis
+    networks:
+      - hello-dapr
+      
+  event-api-dapr:
+    image: "daprio/daprd:1.8.4"
+    depends_on:
+      - event-api
+    network_mode: "service:event-api"
+    
+  identity-api:
+    build: 
+      context: ./../PicCard.Identity
+      dockerfile: ./src/PicCard.Identity.Api/Dockerfile
+    depends_on:
+      - redis
+    networks:
+      - hello-dapr
+      
+  identity-api-dapr:
+    image: "daprio/daprd:1.8.4"
+    depends_on:
+      - identity-api
+    network_mode: "service:identity-api"
+ 
+  notification-api:
+    build: 
+      context: ./../PicCard.Notification
+      dockerfile: ./src/PicCard.Notification.Api/Dockerfile
+    depends_on:
+      - redis
+    networks:
+      - hello-dapr
+      
+  notification-api-dapr:
+    image: "daprio/daprd:1.8.4"
+    depends_on:
+      - notification-api
+    network_mode: "service:notification-api"
+
+  photo-api:
+    build: 
+      context: ./../PicCard.Photo
+      dockerfile: ./src/PicCard.Photo.Api/Dockerfile
+    depends_on:
+      - redis
+    networks:
+      - hello-dapr
+      
+  photo-api-dapr:
+    image: "daprio/daprd:1.8.4"
+    depends_on:
+      - photo-api
+    network_mode: "service:photo-api"
+    
+  recommendation-api:
+    build: 
+      context: ./../PicCard.Recommendation
+      dockerfile: ./src/PicCard.Recommendation.Api/Dockerfile
+    depends_on:
+      - redis
+    networks:
+      - hello-dapr
+      
+  recommendation-api-dapr:
+    image: "daprio/daprd:1.8.4"
+    depends_on:
+      - recommendation-api
+    network_mode: "service:recommendation-api"
+    
+  social-api:
+    build: 
+      context: ./../PicCard.Social
+      dockerfile: ./src/PicCard.Social.Api/Dockerfile
+    depends_on:
+      - redis
+    networks:
+      - hello-dapr
+      
+  social-api-dapr:
+    image: "daprio/daprd:1.8.4"
+    depends_on:
+      - social-api
+    network_mode: "service:social-api"
+    
+  subscription-api:
+    build: 
+      context: ./../PicCard.Subscription
+      dockerfile: ./src/PicCard.Subscription.Api/Dockerfile
+    depends_on:
+      - redis
+    networks:
+      - hello-dapr
+      
+  subscription-api-dapr:
+    image: "daprio/daprd:1.8.4"
+    depends_on:
+      - subscription-api
+    network_mode: "service:subscription-api"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
+      
+  redis:
+    image: "redis:alpine"
+    networks:
+      - hello-dapr
+      
+networks:
+    hello-dapr:

@@ -1,0 +1,149 @@
+version: '3.4'
+services:
+  archive-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+    ports:
+      - "5101:80"
+      - "50001:50001"
+
+  archive-api-dapr:
+    command: ["./daprd",
+      "-app-id", "archive-api",
+      "-app-port", "80",
+      "-components-path", "/components"]
+    volumes:
+      - "./components/archive/:/components"
+      
+  comment-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+    ports:
+      - "5102:80"
+      - "50002:50001"
+
+  comment-api-dapr:
+    command: ["./daprd",
+      "-app-id", "comment-api",
+      "-app-port", "80",
+      "-components-path", "/components"]
+    volumes:
+      - "./components/comment/:/components"
+
+  event-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+    ports:
+      - "5103:80"
+      - "50003:50001"
+
+  event-api-dapr:
+    command: ["./daprd",
+      "-app-id", "event-api",
+      "-app-port", "80",
+      "-components-path", "/components"]
+    volumes:
+      - "./components/event/:/components"
+
+  identity-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+    ports:
+      - "5104:80"
+      - "50004:50001"
+
+  identity-api-dapr:
+    command: ["./daprd",
+      "-app-id", "identity-api",
+      "-app-port", "80",
+      "-components-path", "/components"]
+    volumes:
+      - "./components/identity/:/components"
+      
+  notification-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+    ports:
+      - "5105:80"
+      - "50005:50001"
+
+  notification-api-dapr:
+    command: ["./daprd",
+      "-app-id", "notification-api",
+      "-app-port", "80",
+      "-components-path", "/components"]
+    volumes:
+      - "./components/notification/:/components"
+
+  photo-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+    ports:
+      - "5106:80"
+      - "50006:50001"
+
+  photo-api-dapr:
+    command: ["./daprd",
+      "-app-id", "photo-api",
+      "-app-port", "80",
+      "-components-path", "/components"]
+    volumes:
+      - "./components/photo/:/components"
+      
+  recommendation-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+    ports:
+      - "5107:80"
+      - "50007:50001"
+
+  recommendation-api-dapr:
+    command: ["./daprd",
+      "-app-id", "recommendation-api",
+      "-app-port", "80",
+      "-components-path", "/components"]
+    volumes:
+      - "./components/recommendation/:/components"
+
+  social-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+    ports:
+      - "5108:80"
+      - "50008:50001"
+
+  social-api-dapr:
+    command: ["./daprd",
+      "-app-id", "social-api",
+      "-app-port", "80",
+      "-components-path", "/components"]
+    volumes:
+      - "./components/social/:/components"
+      
+  subscription-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+    ports:
+      - "5109:80"
+      - "50009:50001"
+
+  subscription-api-dapr:
+    command: ["./daprd",
+      "-app-id", "subscription-api",
+      "-app-port", "80",
+      "-components-path", "/components"]
+    volumes:
+      - "./components/subscription/:/components"
+      
+  redis:
+    ports:
+      - "5379:6379"

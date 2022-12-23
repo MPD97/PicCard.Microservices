@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PicCard.Archive", "PicCard.Archive", "{47B18CFD-5A89-4EFD-B2D2-9EAFD70D73A5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PicCard.Comment", "PicCard.Comment", "{9C648C9A-B79F-48A3-B874-4DA7273A7A5C}"
@@ -54,23 +57,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3F267706-EF7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8E511B3E-0899-4632-84F8-1EB650EF992C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicCard.Archive.Api", "..\PicCard.Archive\src\PicCard.Archive.Api\PicCard.Archive.Api.csproj", "{2F02A12A-89C6-47E4-9B4F-034D9883E79E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicCard.Archive.Api", "..\PicCard.Archive\src\PicCard.Archive.Api\PicCard.Archive.Api.csproj", "{2F02A12A-89C6-47E4-9B4F-034D9883E79E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicCard.Comment.Api", "..\PicCard.Comment\src\PicCard.Comment.Api\PicCard.Comment.Api.csproj", "{0CEB5431-5B80-4B3C-902D-D5009721660C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicCard.Comment.Api", "..\PicCard.Comment\src\PicCard.Comment.Api\PicCard.Comment.Api.csproj", "{0CEB5431-5B80-4B3C-902D-D5009721660C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicCard.Event.Api", "..\PicCard.Event\src\PicCard.Event.Api\PicCard.Event.Api.csproj", "{5BCDB4D4-BCE5-4336-BDFF-B80F359EB4C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicCard.Event.Api", "..\PicCard.Event\src\PicCard.Event.Api\PicCard.Event.Api.csproj", "{5BCDB4D4-BCE5-4336-BDFF-B80F359EB4C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicCard.Identity.Api", "..\PicCard.Identity\src\PicCard.Identity.Api\PicCard.Identity.Api.csproj", "{B61FB97D-BE29-4A84-B5D9-7870C1D056DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicCard.Identity.Api", "..\PicCard.Identity\src\PicCard.Identity.Api\PicCard.Identity.Api.csproj", "{B61FB97D-BE29-4A84-B5D9-7870C1D056DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicCard.Notification.Api", "..\PicCard.Notification\src\PicCard.Notification.Api\PicCard.Notification.Api.csproj", "{7C21FE82-41FF-4CCD-9BA9-D9CDFFFED2AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicCard.Notification.Api", "..\PicCard.Notification\src\PicCard.Notification.Api\PicCard.Notification.Api.csproj", "{7C21FE82-41FF-4CCD-9BA9-D9CDFFFED2AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicCard.Photo.Api", "..\PicCard.Photo\src\PicCard.Photo.Api\PicCard.Photo.Api.csproj", "{2382626D-305D-4744-AE40-DF99D68448D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicCard.Photo.Api", "..\PicCard.Photo\src\PicCard.Photo.Api\PicCard.Photo.Api.csproj", "{2382626D-305D-4744-AE40-DF99D68448D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicCard.Recommendation.Api", "..\PicCard.Recommendation\src\PicCard.Recommendation.Api\PicCard.Recommendation.Api.csproj", "{72614254-728C-44B4-B294-857382287220}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicCard.Recommendation.Api", "..\PicCard.Recommendation\src\PicCard.Recommendation.Api\PicCard.Recommendation.Api.csproj", "{72614254-728C-44B4-B294-857382287220}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicCard.Social.Api", "..\PicCard.Social\src\PicCard.Social.Api\PicCard.Social.Api.csproj", "{037608FA-E395-4795-9B1B-FE0D8F1812C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicCard.Social.Api", "..\PicCard.Social\src\PicCard.Social.Api\PicCard.Social.Api.csproj", "{037608FA-E395-4795-9B1B-FE0D8F1812C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicCard.Subscription.Api", "..\PicCard.Subscription\src\PicCard.Subscription.Api\PicCard.Subscription.Api.csproj", "{5F289F24-5341-43AE-B0F8-8747C893CAE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicCard.Subscription.Api", "..\PicCard.Subscription\src\PicCard.Subscription.Api\PicCard.Subscription.Api.csproj", "{5F289F24-5341-43AE-B0F8-8747C893CAE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,6 +118,9 @@ Global
 		{5F289F24-5341-43AE-B0F8-8747C893CAE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F289F24-5341-43AE-B0F8-8747C893CAE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{49479D4A-5750-43CD-BE8B-E39E9E2DB40A} = {47B18CFD-5A89-4EFD-B2D2-9EAFD70D73A5}
 		{AB0B9AE4-572F-404E-9ED0-02E642B36F43} = {47B18CFD-5A89-4EFD-B2D2-9EAFD70D73A5}
@@ -143,5 +149,8 @@ Global
 		{72614254-728C-44B4-B294-857382287220} = {68E01BC7-57A0-4E88-8E48-FB29D50F491F}
 		{037608FA-E395-4795-9B1B-FE0D8F1812C9} = {29B781E9-97B3-4ED0-A068-B385B0B54945}
 		{5F289F24-5341-43AE-B0F8-8747C893CAE9} = {3F267706-EF74-46CF-909F-DFC369949E30}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66248534-6C5D-40E4-9788-92C02F187B1A}
 	EndGlobalSection
 EndGlobal
